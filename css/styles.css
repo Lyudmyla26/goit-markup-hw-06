@@ -397,6 +397,8 @@ img {
 	color: var(--title-color);
 	margin-bottom: 16px;
 }
+.footer-icon {
+}
 .footer-icon-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -423,6 +425,7 @@ img {
 .footer-icon-link:is(:hover, :focus) {
 	background-color: #31d0aa;
 }
+
 /* /footer */
 /* modal */
 .backdrop {
@@ -437,8 +440,8 @@ img {
 }
 .modal {
 	position: absolute;
-	min-height: 500px;
-	width: 408px;
+	min-height: 584px;
+	min-width: 408px;
 	padding: 20px;
 	background-color: var(--modal-fon);
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -557,10 +560,12 @@ img {
 	flex-basis: calc((100% - 48px) / 3);
 }
 .services-item {
+	outline: 1px solid #e7e9fc;
 	transition-property: box-shadow;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .services-item:hover,
 .services-item:focus {
 	cursor: pointer;
@@ -586,7 +591,5 @@ img {
 	text-decoration: underline;
 }
 .content {
-	border: 1px solid #e7e9fc;
-	border-top: 0;
 	padding: 32px 16px;
 }
