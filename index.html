@@ -425,17 +425,25 @@
 						<span>Comment</span>
 						<textarea name="comment" rows="5" placeholder="Text imput" class="form-textarea"></textarea>
 					</label>
-
-					<label for="checkbox" class="form-label-checkbox">
+					<div class="fotm-checkbox">
 						<input
 							type="checkbox"
+							visually-hidden
 							id="checkbox"
 							name="checkbox"
-							value="I accept the terms and conditions of the Privacy Policy"
-							class="checkbox"
+							value="Privacy Policy"
+							class="fotm-check"
 						/>
-						I accept the terms and conditions of the <a href="">Privacy Policy</a></label
-					>
+
+						<label class="form-label-checkbox" for="checkbox">
+							I accept the terms and conditions of the <a href="" class="checkbox-link">Privacy Policy</a></label
+						>
+						<span
+							><svg width="15" height="12" class="form-chech-icon">
+								<use href="./images/symbol-defs.svg#icon-galka"></use>
+							</svg>
+						</span>
+					</div>
 					<button type="submit" class="form-btn">Send</button>
 				</form>
 			</div>

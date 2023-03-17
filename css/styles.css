@@ -549,9 +549,50 @@ img {
 	line-height: 1.17;
 	letter-spacing: 0.04em;
 	color: rgba(46, 47, 66, 0.4);
+	resize: none;
 }
 .form-textarea:focus {
 	border-color: var(--accent-color);
+}
+.fotm-check {
+	position: absolute;
+	appearance: none;
+}
+.form-label-checkbox {
+	left: 0;
+	top: 0;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	color: var(--customers-icom);
+	display: flex;
+	align-items: center;
+}
+.form-label-checkbox::before {
+	content: " ";
+	width: 16px;
+	height: 16px;
+	display: block;
+	border: 1px solid var(--basic-color);
+	border-radius: 2px;
+	display: block;
+	margin-right: 4px;
+	position: relative;
+}
+.fotm-check:checked + .form-label-checkbox::before {
+	background-color: var(--accent-color);
+	border: 1px solid var(--accent-color);
+}
+.fotm-checkbox {
+	margin-top: 16px;
+}
+
+.checkbox-link {
+	color: var(--accent-color);
+}
+.form-chech-icon {
+	position: absolute;
 }
 .form-btn {
 	background: #4d5ae5;
@@ -572,6 +613,7 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 /* /modal */
 /* Портфоліо */
 
